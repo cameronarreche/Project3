@@ -323,9 +323,7 @@ int main() {
          * Solution: Using maps, below function reduces inputs to 552,000
          */
         if (date.at(3) == 51 || date.at(3) == 52 || date.at(3) == 53 || date.at(3) == 54) {
-            cout << date << endl;
             date[3] = 56;
-            cout << "new date: " << date << endl;
         }
 
         double volatility = calcVolatility(stod(high), stod(low), stod(open), stod(close));
